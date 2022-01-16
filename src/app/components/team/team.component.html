@@ -1,0 +1,7 @@
+<div *ngIf="teamsData.length !==0">
+    <h5>Teams</h5>
+    <div class="card p-2 mt-2" *ngFor="let team of teamsData; index as i">
+        <h5># {{i+1}}</h5>
+        <p *ngFor="let memb of team">{{memb}}</p>
+    </div>
+</div>
